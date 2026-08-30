@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-display: 'Syne', 'Space Grotesk', system-ui, sans-serif;
+    --color-accent: #F27D26;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #050505;
+    color: #e5e5e5;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F27D26;
+}
+
+/* Dot grid overlay matching Bold Typography design */
+.dot-grid-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.subtle-dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Architectural outline text stroke */
+.text-stroke-light {
+  -webkit-text-stroke: 1.5px #e5e5e5;
+  color: transparent;
+}
+
+.text-stroke-orange {
+  -webkit-text-stroke: 1.5px #F27D26;
+  color: transparent;
+}
+
+.text-stroke-subtle {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+  color: transparent;
+}
+
+/* Technical left border cards */
+.editorial-card {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.02);
+  transition: all 0.2s ease;
+}
+
+.editorial-card:hover {
+  border-left-color: #F27D26;
+  background-color: rgba(255, 255, 255, 0.035);
+}
+
+.editorial-border-b {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.editorial-border-t {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
